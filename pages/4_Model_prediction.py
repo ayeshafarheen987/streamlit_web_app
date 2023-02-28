@@ -34,7 +34,7 @@ Potential = st.number_input("Enter Potential",0,100)
 
 if st.button("Predict"):
 
-    pickle_in = open(r'C:\Users\LENOVO X1 YOGA\Desktop\innomatics\project\model_Random.pkl', 'rb') 
+    pickle_in = open(r'https://github.com/ayeshafarheen987/streamlit_web_app/blob/main/model_Random.pkl', 'rb') 
     r = pickle.load(pickle_in)
     
     X = pd.DataFrame([[Best_overall,Overall_rating,Potential,Age]], columns = ['Best_overall','Overall_rating','Potential','Age'])
